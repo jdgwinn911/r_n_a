@@ -28,5 +28,9 @@ class Rna < Minitest::Test
         assert_equal("CM", romany(900))
     end
 
+    def test_that_things_have_been_switched
+        assert_equal("cd", romany(400))
+    end
+
 
 end

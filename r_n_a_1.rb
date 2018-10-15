@@ -1,4 +1,4 @@
-def rom_num()
+def rom_num1()
     num_letter = {
     1000 => "M",  
      900 => "CM",  
@@ -16,7 +16,7 @@ def rom_num()
     }
 end
 
-def romany(n)
+def romany1(n)
     roman = ""
      if n == 0 
             return roman 
