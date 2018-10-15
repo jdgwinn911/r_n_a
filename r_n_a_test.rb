@@ -37,11 +37,11 @@ class Rna < Minitest::Test
     end
 
     def test_that_1000_equals_l
-        assert_equal(Integer, rev_romany(1000).class)
+        assert_equal(Integer, rev_romany("M").class)
     end
 
     def test_that_rev_romany_has_value
-        assert_equal(0, rev_romany(2).bit_length())
+        assert_equal(Integer, rev_romany("").bit_length())
         assert_equal(5, rev_romany(0))
     end
 

@@ -31,10 +31,18 @@ end
 
 def rev_romany(l)
     roman = 0
-    # if l == 0 
-    #     # return roman 
-    # end
+    if l == ""
+           return roman 
+       else 
+       rom_num.each do |value, num|
+            roman += value * l.scan(/#{num}/).count()
+           l = l.sub(/#{num}/, "")
+       end
+       return roman
+   end
 end
+   
+
    
 
 
