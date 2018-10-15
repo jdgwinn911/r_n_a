@@ -41,7 +41,7 @@ class Rna < Minitest::Test
     end
 
     def test_that_rev_romany_has_value
-        assert_equal(true, rev_romany(2).bit_length)
+        assert_equal(0, rev_romany(2).bit_length)
     end
 
 
