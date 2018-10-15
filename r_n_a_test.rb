@@ -63,7 +63,7 @@ class Rna < Minitest::Test
     end
 
     def test_that_you_cant_enter_silly_things
-        assert_equal("that's wrong! try again", romany("5qc"))
+        assert_equal("That's wrong! try again", romany("5qc"))
     end
 
 

@@ -21,7 +21,7 @@ def romany(n)
     if n == 0 
         return roman 
     elsif n.class != Integer
-        return "Thats wrong! try again"
+        return "That's wrong! try again"
     end
     rom_num.each do |num, value|
         roman += value*(n / num)
