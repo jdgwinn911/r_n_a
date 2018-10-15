@@ -14,6 +14,10 @@ class Rna < Minitest::Test
         assert_equal(true, rom_num().length > 0)
     end
 
+    def test_that_m_equals_1000
+        assert_equal("M", rom_num(){"1000"})
+    end
+
 
 
 end
