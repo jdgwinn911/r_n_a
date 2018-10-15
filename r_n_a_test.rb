@@ -15,11 +15,11 @@ class Rna < Minitest::Test
     end
 
     def test_that_m_equals_1000
-        assert_equal("M", rom_num()[0])
+        assert_equal(["M", 1000], rom_num()[0])
     end
 
-    def test_that__equals_1000
-        assert_equal("C", rom_num().fetch(100))
+    def test_that_d_equals_500
+        assert_equal(["D", 500], rom_num()[1])
     end
 
 
