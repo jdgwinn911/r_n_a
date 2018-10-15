@@ -29,7 +29,8 @@ def romany(n)
     end
 end
 
-
+def rev_romany()
+end
    
 
 
