@@ -62,6 +62,10 @@ class Rna < Minitest::Test
         assert_equal(593, rev_romany("DXCIII"))
     end
 
+    def test_that_you_cant_enter_silly_things
+        assert_equal("that's wrong! try again", romany("5qc"))
+    end
+
 
 
 
