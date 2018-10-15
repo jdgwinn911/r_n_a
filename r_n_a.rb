@@ -20,13 +20,14 @@ def romany(n)
     roman = ""
     if n == 0 
         return roman 
-    else 
-        rom_num.each do |num, value|
-            roman += value*(n / num)
-            n = n % num
-        end
-        return roman
+    elsif n.class != Integer
+        return "Thats wrong! try again"
     end
+    rom_num.each do |num, value|
+        roman += value*(n / num)
+        n = n % num
+    end
+    return roman
 end
 
 def rev_rom_num()
@@ -59,6 +60,7 @@ def rev_romany(l)
        return roman
    end
 end
+
    
 
    
