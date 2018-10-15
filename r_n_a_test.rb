@@ -25,7 +25,7 @@ class Rna < Minitest::Test
     def test_romany_for_n
         assert_equal("", romany(0))
         assert_equal("M", romany(1000))
-        assert_equal("CM", romany("900"))
+        assert_equal("CM", romany(900))
     end
 
 
