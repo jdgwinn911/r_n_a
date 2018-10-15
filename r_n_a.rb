@@ -14,7 +14,6 @@ def rom_num()
         4 => "IV",  
         1 => "I"
     }
-    # p rom_num
 end
 
 def romany(n)

@@ -56,6 +56,10 @@ class Rna < Minitest::Test
         assert_equal("XVII", romany(17))
     end
 
+    def test_that_the_numbers_can_be_huge
+        assert_equal("CMXL", romany(930))
+    end
+
 
 
 
