@@ -6,20 +6,20 @@ class Rna < Minitest::Test
         assert_equal(1, 1)
     end
 
-    def test_that_it_is_a_hsh
-        assert_equal(Hash, rom_num().class)
+    def test_that_it_is_a_array
+        assert_equal(Array, rom_num().class)
     end
 
-    def test_that_hash_has_value
+    def test_that_array_has_value
         assert_equal(true, rom_num().length > 0)
     end
 
     def test_that_m_equals_1000
-        assert_equal("M", rom_num().fetch(1000))
+        assert_equal("M", rom_num()[0])
     end
 
     def test_that__equals_1000
-        assert_equal("CM", rom_num().fetch(900))
+        assert_equal("C", rom_num().fetch(100))
     end
 
 
