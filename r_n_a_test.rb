@@ -10,6 +10,10 @@ class Rna < Minitest::Test
         assert_equal(Hash, rom_num().class)
     end
 
+    def test_that_hash_has_value
+        assert_equal(true, rom_num().length > 0)
+    end
+
 
 
 end
