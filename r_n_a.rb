@@ -52,13 +52,21 @@ def rev_romany(l)
     roman = 0
     if l == ""
            return roman 
-       else 
+    elsif l.class != String
+        return "you can't do that!"
+    end
+    temp = l.split('')
+    temp.each do |v|
+        if !rev_rom_num.has_value?(v)
+            return "you can't do that!"
+        end
+    end
+
        rev_rom_num.each do |value, num|
             roman += value * l.scan(/#{num}/).count()
            l = l.sub(/#{num}/, "")
        end
-       return roman
-   end
+    return roman
 end
 
    
