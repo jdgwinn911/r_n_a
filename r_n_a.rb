@@ -14,6 +14,7 @@ def rom_num()
         4 => "IV",  
         1 => "I"
     }
+    # p rom_num
 end
 
 def romany(n)
@@ -29,12 +30,30 @@ def romany(n)
     end
 end
 
+def rev_rom_num()
+    num_letter1 = {
+        900 => "CM",
+        400 => "CD",
+        90 => "XC",
+        40 => "XL", 
+        9 => "IX", 
+        4 => "IV",
+        1000 => "M",
+        500 => "D", 
+        100 => "C",
+        50 => "L", 
+        10 => "X", 
+        5 => "V", 
+        1 => "I"
+    }
+end
+
 def rev_romany(l)
     roman = 0
     if l == ""
            return roman 
        else 
-       rom_num.each do |value, num|
+       rev_rom_num.each do |value, num|
             roman += value * l.scan(/#{num}/).count()
            l = l.sub(/#{num}/, "")
        end

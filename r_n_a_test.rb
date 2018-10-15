@@ -42,8 +42,12 @@ class Rna < Minitest::Test
 
     def test_that_rev_romany_has_value
         assert_equal(0, rev_romany("").bit_length())
-        assert_equal(Integer, rev_romany("CM").class)
-        assert_equal(Integer, rev_romany("CD").class)
+        assert_equal(900, rev_romany("CM"))
+        assert_equal(400, rev_romany("CD"))
+    end
+
+    def test_that_rev_romany_returns_correctly
+        assert_equal(100, rev_romany("C"))
     end
 
 
