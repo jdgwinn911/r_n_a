@@ -32,5 +32,14 @@ class Rna < Minitest::Test
         assert_equal("CD", romany(400))
     end
 
+    def test_that_90_equals_XC
+        assert_equal("XC", romany(90))
+    end
+
+    def test_that_1000_equals_m
+        assert_equal(1000, rev_romany().class)
+    end
+
+
 
 end
