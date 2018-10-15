@@ -12,20 +12,19 @@ def rom_num()
         9 => "IX",  
         5 => "V",  
         4 => "IV",  
-        1 => "I",
-        0 => ""
+        1 => "I"
     }
 end
 
 def romany(n)
     roman = ""
     if n == 0 
-        return roman
-    end
-    
+        return roman 
+    else 
    rom_num.each do |num, value|
         roman += value*(n / num)
         n = n % num
     end
     return roman
+end
 end

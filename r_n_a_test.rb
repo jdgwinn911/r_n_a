@@ -22,12 +22,9 @@ class Rna < Minitest::Test
         assert_equal("CM", rom_num().fetch(900))
     end
 
-    def test_that_empty_string_equals_0
-        assert_equal("", rom_num().fetch(0))
-    end
-
     def test_romany_for_0
         assert_equal("", romany(0))
+        assert_equal("M", romany(1000))
     end
 
 
