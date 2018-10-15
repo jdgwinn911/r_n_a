@@ -50,6 +50,13 @@ class Rna < Minitest::Test
         assert_equal(100, rev_romany("C"))
     end
 
+    def test_assert_that_romany_returns_correctly
+        assert_equal("IV", romany(4))
+        assert_equal("XVII", romany(17))
+    end
+
+
+
 
 
 end
