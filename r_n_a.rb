@@ -1,3 +1,4 @@
+#making a hash
 def rom_num()
     num_letter = {
     1000 => "M",  
@@ -15,7 +16,7 @@ def rom_num()
         1 => "I"
     }
 end
-
+#making error and running loop to make empty string contain the value
 def romany(n)
     roman = ""
     if n == 0 
@@ -29,7 +30,7 @@ def romany(n)
     end
     return roman
 end
-
+#making another hash but ordered differently
 def rev_rom_num()
     num_letter1 = {
         900 => "CM",
@@ -47,7 +48,7 @@ def rev_rom_num()
         1 => "I"
     }
 end
-
+#making 0 contain the number of the numerals
 def rev_romany(l)
     roman = 0
     if l == ""
@@ -61,14 +62,13 @@ def rev_romany(l)
             return "you can't do that!"
         end
     end
-
+# loop that scans through string and counting 
        rev_rom_num.each do |value, num|
             roman += value * l.scan(/#{num}/).count()
            l = l.sub(/#{num}/, "")
        end
     return roman
 end
-
    
 
    
