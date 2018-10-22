@@ -48,7 +48,7 @@ def rev_rom_num()
         1 => "I"
     }
 end
-#making 0 contain the number of the numerals
+#making error message if input isn't string, splitting temp variable l into array and running loop on it
 def rev_romany(l)
     roman = 0
     if l == ""
@@ -62,7 +62,7 @@ def rev_romany(l)
             return "you can't do that!"
         end
     end
-# loop that scans through string and counting 
+# loop that scans through array and adds each letter to roman then subs that letter out
        rev_rom_num.each do |value, num|
             roman += value * l.scan(/#{num}/).count()
            l = l.sub(/#{num}/, "")
